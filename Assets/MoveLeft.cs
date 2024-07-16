@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
-    // Update is called once per frame
-    void Update()
+    public Transform firePoint;
+    public GameObject bulletPrefab;
+    public float shootDelay = 0.3f; // Delay between each shot in seconds
+
+    // Start is called before the first frame update
+    void Start()
     {
-        transform.Translate(Vector2.left * Time.deltaTime * 5);
+        InvokeRepeating("Shoot", 0f, shootDelay); // Starts shooting with a delay of 0 seconds and repeats every shootDelay seconds
+    }
+
+    void Shoot()
+    {
+        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); // Instantiates a bullet at the fire point's position and rotation
     }
 }
