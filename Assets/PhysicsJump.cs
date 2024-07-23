@@ -20,3 +20,4 @@ public class PhysicsJump : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
+}

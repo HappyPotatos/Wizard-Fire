@@ -13,7 +13,6 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         switch(transform.position.y) { 
             case >3:
                 transform.position = new Vector3(transform.position.x, 3, transform.position.z);
