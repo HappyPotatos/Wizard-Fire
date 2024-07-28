@@ -15,10 +15,7 @@ public class LoadMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single); // Load the main menu scene
 
-        // Get the scene name of the "CreditScene" scene
-        string creditSceneName = "CreditScene";
-
         // Unload the "CreditScene" scene
-        SceneManager.UnloadSceneAsync(creditSceneName);
+        SceneManager.UnloadSceneAsync("CreditScene");
     }
 }
