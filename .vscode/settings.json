@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Wizard-Fire.sln"
+    "dotnet.defaultSolution": "Wizard-Fire.sln",
+    "dotnet.preferCSharpExtension": true
 }
