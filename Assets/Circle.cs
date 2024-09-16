@@ -11,4 +11,13 @@ public class Circle : MonoBehaviour
     {
         rb.velocity = transform.right * speed; // Sets the initial velocity of the circle to the right
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check if the ball collides with another object
+        if (collision.gameObject)
+        {
+            // Destroy the ball after contact
+            Destroy(gameObject);
+        }
+    }
 }

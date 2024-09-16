@@ -18,6 +18,5 @@ public class shoot : MonoBehaviour
     {
         GameObject InstantiatedBullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); // Instantiates a bullet at the fire point's position and rotation
         Destroy(InstantiatedBullet.gameObject, 20f);
-
     }
 }
